@@ -1,0 +1,151 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2c3e50; /* 深蓝灰色 */
+    color: #ecf0f1; /* 浅云白色 */
+    padding: 20px 40px;
+    text-align: center;
+    border-bottom: 4px solid #3498db; /* 亮蓝色 */
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 2.2em;
+}
+
+header p {
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+.gallery-container {
+    display: grid;
+    /* 每行显示3列，您可以根据需要调整 */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; /* 图片之间的间距 */
+    padding: 20px;
+    max-width: 1400px; /* 限制最大宽度，使其居中 */
+    margin: 20px auto;
+}
+
+.map-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* 确保图片圆角生效 */
+    position: relative; /* 为悬停信息定位提供参考 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.map-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.map-card img {
+    width: 100%;
+    height: auto; /* 或者设定一个固定高度，例如 height: 250px; object-fit: cover; */
+    display: block;
+    border-bottom: 1px solid #eee;
+}
+
+.map-card-title {
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    font-weight: bold;
+    color: #34495e; /* 深蓝灰色 */
+    background-color: #ecf0f1; /* 浅云白色，与卡片背景略有区分 */
+}
+
+/* 悬停提示框样式 */
+.tooltip-container {
+    position: fixed; /* 固定在屏幕上 */
+    background-color: rgba(44, 62, 80, 0.95); /* 深蓝灰色，带透明度 */
+    color: #ecf0f1;
+    padding: 15px 20px;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    z-index: 1000;
+    pointer-events: none; /* 重要：让鼠标事件穿透提示框本身 */
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+    max-width: 350px; /* 限制提示框最大宽度 */
+    font-size: 0.9em;
+    transform: scale(0.95); /* 初始稍微缩小 */
+}
+
+.tooltip-container.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.tooltip-container h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+    color: #3498db; /* 亮蓝色标题 */
+}
+
+.tooltip-container p {
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #34495e; /* 深蓝灰色 */
+    color: #bdc3c7; /* 银色 */
+    font-size: 0.9em;
+}
+/* 模态框样式 */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.85);
+}
+
+.modal-content {
+    display: block;
+    margin: auto;
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.4);
+}
+
+.modal-close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.modal-close:hover {
+    color: #ccc;
+}
+
+#modal-caption {
+    text-align: center;
+    color: #ecf0f1;
+    padding: 15px;
+    font-size: 1.1em;
+}

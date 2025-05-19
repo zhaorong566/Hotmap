@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>上海市公共服务设施热力图分析</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>上海市公共服务设施空间分布热力图</h1>
+        <p>通过以下热力图，我们可以观察不同类型公共服务设施在上海市的集聚特征。</p>
+    </header>
+
+    <div class="gallery-container">
+        <div class="map-card" data-title="地铁站热力图" data-description="该图展示了上海市地铁站点的空间分布密度。可以看出，地铁站高度集中在市中心区域，并沿主要放射状线路分布，覆盖了人口稠密和商业活动频繁的区域。">
+            <img src="images\地铁站热力图.png" alt="地铁站热力图">
+            <p class="map-card-title">地铁站</p>
+        </div>
+
+        <div class="map-card" data-title="公交站热力图" data-description="公交站点网络更为密集，在补充地铁覆盖的同时，也深入到了更多社区。中心城区的公交密度显著高于外围区域。">
+            <img src="images\公交站热力图.png" alt="公交站热力图">
+            <p class="map-card-title">公交站</p>
+        </div>
+
+        <div class="map-card" data-title="健身馆热力图" data-description="健身馆的分布也呈现向中心城区集中的趋势，特别是在商业区和人口密度较高的居住区附近更为密集。">
+            <img src="images\健身馆热力图.png" alt="健身馆热力图">
+            <p class="map-card-title">健身馆</p>
+        </div>
+
+        <div class="map-card" data-title="青少年活动中心热力图" data-description="青少年活动中心的分布相对较为分散，但市中心及部分人口大区仍有明显热点，显示了资源配置的一些重点区域。">
+            <img src="images\青少年活动中心热力图.png" alt="青少年活动中心热力图">
+            <p class="map-card-title">青少年活动中心</p>
+        </div>
+
+        <div class="map-card" data-title="社区卫生服务中心热力图" data-description="社区卫生服务中心的分布更加强调社区覆盖的均衡性，热点分布相对广泛，保障了居民的基本医疗需求。">
+            <img src="images\社区卫生服务中心热力图.png" alt="社区卫生服务中心热力图">
+            <p class="map-card-title">社区卫生服务中心</p>
+        </div>
+
+        <div class="map-card" data-title="社区文化活动中心热力图" data-description="社区文化活动中心的分布也体现了服务社区的原则，在各区均有覆盖，但中心城区的密度和热度更高。">
+            <img src="images\社区文化活动中心热力图.png" alt="社区文化活动中心热力图">
+            <p class="map-card-title">社区文化活动中心</p>
+        </div>
+
+        <div class="map-card" data-title="图书馆热力图" data-description="图书馆（含公共图书馆、高校图书馆等）的分布在市中心区域有较高密度，同时各区县也有骨干图书馆覆盖。">
+            <img src="images\图书馆热力图.png" alt="图书馆热力图">
+            <p class="map-card-title">图书馆</p>
+        </div>
+
+        <div class="map-card" data-title="小学热力图" data-description="小学的分布与居住区紧密相关，呈现多核心、片区化的分布特征，力求满足学龄儿童的就近入学需求。">
+            <img src="images\小学热力图.png" alt="小学热力图">
+            <p class="map-card-title">小学</p>
+        </div>
+
+        <div class="map-card" data-title="幼儿园热力图" data-description="幼儿园的分布最为广泛和深入社区，密度与人口密度高度相关，保障了幼儿的早期教育服务。">
+            <img src="images\幼儿园热力图.png" alt="幼儿园热力图">
+            <p class="map-card-title">幼儿园</p>
+        </div>
+        <div class="map-card" data-title="养老院热力图" data-description="养老院的分布热点显示出对中心城区以及部分人口老龄化程度较高区域的侧重，同时也关注到了部分外围大型居住区的养老需求。" data-img-src="养老院热力图.jpg">
+            <img src="images\养老院热力图.png" alt="养老院热力图">
+            <p class="map-card-title">养老院</p>
+        </div>
+
+        <div class="map-card" data-title="游泳馆热力图" data-description="游泳馆的分布相对集中在市中心和各区发展较为成熟的区域，反映了体育设施与城市发展水平和人口活力的关联性。" data-img-src="游泳馆热力图.jpg">
+            <img src="images\游泳馆热力图.png" alt="游泳馆热力图">
+            <p class="map-card-title">游泳馆</p>
+        </div>
+
+        <div class="map-card" data-title="运动场热力图" data-description="运动场（包括学校及公共运动场地）的分布在全市范围内均有覆盖，但在教育资源集中或大型社区附近形成了较为明显的密度热点。" data-img-src="运动场热力图.jpg">
+            <img src="images\运动场热力图.png" alt="运动场热力图">
+            <p class="map-card-title">运动场</p>
+        </div>
+
+        <div class="map-card" data-title="中学热力图" data-description="中学的空间分布与小学类似，与居住区规划紧密相连，呈现多中心、组团式布局，以保障适龄学生的教育资源可达性。" data-img-src="中学热力图.jpg">
+            <img src="images\中学热力图.png" alt="中学热力图">
+            <p class="map-card-title">中学</p>
+        </div>
+        </div>
+
+    <div id="tooltip" class="tooltip-container">
+        <h3 id="tooltip-title"></h3>
+        <p id="tooltip-description"></p>
+    </div>
+    <!-- 放大图片模态框 -->
+<div id="modal" class="modal">
+    <span class="modal-close">&times;</span>
+    <img class="modal-content" id="modal-img">
+    <div id="modal-caption"></div>
+</div>
+
+    <footer>
+        <p>上海市15分钟生活圈公共服务研究项目</p>
+    </footer>
+
+    <script src="text.js"></script>
+</body>
+</html>
